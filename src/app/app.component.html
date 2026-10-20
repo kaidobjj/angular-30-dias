@@ -1,0 +1,114 @@
+
+<div style="
+  min-height: 100vh;
+  padding: 50px;
+  background: #0f172a;
+  color: white;
+  font-family: Arial, sans-serif;
+">
+
+  <h1>{{ titulo }}</h1>
+
+  <p>Ejercicio</p>
+
+  <div style="
+    background: #1e293b;
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 600px;
+    margin-top: 30px;
+  ">
+
+    <h2>Contador con Signals</h2>
+
+    <p>Aprende interpolación, eventos y estado reactivo.</p>
+
+    <h1 style="font-size: 60px; text-align: center;">
+      {{ contador() }}
+    </h1>
+
+    <p style="text-align: center;">
+      Valor doble: {{ doble() }}
+    </p>
+
+    <div style="
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: center;
+    ">
+
+      <button (click)="decrementar()">
+        -1
+      </button>
+
+      <button (click)="incrementar()">
+        +1
+      </button>
+
+      <button (click)="incrementarCinco()">
+        +5
+      </button>
+
+       <button (click)="decrementarCinco()">
+        -5
+      </button>
+
+      <button (click)="reiniciar()">
+        Reiniciar
+      </button>
+
+    </div>
+
+  
+@if (contador() >= 30) {
+  <p style="
+    color: #22c55e;
+    text-align: center;
+    margin-top: 20px;
+  ">
+    ¡Increíble! Llegaste a 30 o más.
+  </p>
+}
+@else if (contador() >= 20) {
+  <p style="
+    color: #d81515;
+    text-align: center;
+    margin-top: 20px;
+  ">
+    ¡Excelente! Llegaste a 20 o más.
+  </p>
+}
+@else if (contador() >= 10) {
+  <p style="
+    color: #decf4a;
+    text-align: center;
+    margin-top: 20px;
+  ">
+    ¡Muy bien! Llegaste a 10 o más.
+  </p>
+}
+@else {
+  <p style="
+    color: #94a3b8;
+    text-align: center;
+    margin-top: 20px;
+  ">
+    Sigue incrementando el contador.
+  </p>
+}
+
+  </div>
+
+  <div style="
+    background: #1a4386;
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 600px;
+    margin-top: 20px;
+  ">
+
+    
+  </div>
+
+</div>
