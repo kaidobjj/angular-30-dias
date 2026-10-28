@@ -1,0 +1,43 @@
+<div class="contenedor-contador">
+
+  <h2>Contador con Signals</h2>
+
+  <p>
+    Mi primer componente independiente en Angular.
+  </p>
+
+  <h1>{{ contador() }}</h1>
+
+  <button (click)="incrementar()">
+    +1
+  </button>
+
+  <button (click)="decrementar()">
+    -1
+  </button>
+
+  <button (click)="incrementarCinco()">
+    +5
+  </button>
+
+  <button (click)="decrementarCinco()">
+    -5
+  </button>
+
+  <button (click)="reiniciar()">
+    Reiniciar
+  </button>
+
+  @if (contador() >= 10 && contador() < 20) {
+    <p>¡Excelente! Llegaste a 10 o más.</p>
+  }
+
+  @if (contador() >= 20 && contador() < 30) {
+    <p>¡Muy bien! Llegaste a 20 o más.</p>
+  }
+
+  @if (contador() >= 30) {
+    <p>¡Increíble! Llegaste a 30 o más.</p>
+  }
+
+</div>

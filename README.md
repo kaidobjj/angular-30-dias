@@ -15,6 +15,8 @@ Proyecto listo para abrir en **Visual Studio Code**.
 
 La aplicación se abrirá normalmente en http://localhost:4200.
 
+
+
 ## Ejercicios del Día 1
 1. Cambia el título.
 2. Crea un botón para sumar 5.
